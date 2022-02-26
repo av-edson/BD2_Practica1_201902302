@@ -1,3 +1,4 @@
+use BD2;
 drop function if exists getProfileId
 create function getProfileId()
     returns int
@@ -45,9 +46,7 @@ as
         print 'ocurrio un error en la transaccion'
 end catch
 
-exec TR1 'edson','avila','oldo@gmail.com','1234',3;
-
-drop procedure TR2;
+drop procedure if exists TR2;
 create or alter procedure TR2
     @mail nvarchar(max), @curseCod int
 as
@@ -79,8 +78,8 @@ as
             print 'ocurrio un error en la transaccion'
         end catch
 
-exec TR2 'oldo@gmail.com',772;
 
+drop procedure if exists TR3;
 create or alter procedure TR3
     @email nvarchar(max), @curseCod int
 as
@@ -118,5 +117,3 @@ as
     begin catch
         print 'ocurrio un error en la transaccion'
     end catch
-
-exec TR3 'hola@gmail.com',772;

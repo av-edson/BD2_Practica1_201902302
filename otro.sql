@@ -1,5 +1,0 @@
-delete from practica1.UsuarioRole where UserId='B36286FD-C7DA-433E-80B2-CC7DCC7F10C1'
-delete from practica1.ProfileStudent where UserId='B36286FD-C7DA-433E-80B2-CC7DCC7F10C1'
-delete from practica1.Notification where UserId='B36286FD-C7DA-433E-80B2-CC7DCC7F10C1'
-delete from practica1.TFA where UserId='B36286FD-C7DA-433E-80B2-CC7DCC7F10C1'
-delete from practica1.Usuarios where id = 'B36286FD-C7DA-433E-80B2-CC7DCC7F10C1'
